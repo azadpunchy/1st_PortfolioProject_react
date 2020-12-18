@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  // toggle hamburger start
+  const [navbar, setnavbar] = useState({
+    navbarState: false,
+    navbarClass: "collapse navbar-collapse",
+  });
+  const mytoggler = () => {
+    if (navbar.navbarState === true) {
+      setnavbar({
+        navbarState: false,
+        navbarClass: "collapse navbar-collapse",
+      });
+    } else {
+      setnavbar({
+        navbarState: true,
+        navbarClass: "collapse navbar-collapse show",
+      });
+    }
+  };
   return (
     <>
       <div className="container-fluid nav_bg">
@@ -15,21 +33,17 @@ const Navbar = () => {
                 <button
                   className="navbar-toggler"
                   type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
+                  onClick={mytoggler}
                 >
                   <span className="navbar-toggler-icon"></span>
                 </button>
-                <div
-                  className="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
+                {/*from here we will begin*/}
+                <div className={navbar.navbarClass} id="navbarSupportedContent">
                   <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <NavLink exact activeClassName="menu_active"
+                      <NavLink
+                        exact
+                        activeClassName="menu_active"
                         className="nav-link active"
                         aria-current="page"
                         to="/"
@@ -38,17 +52,32 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink exact activeClassName="menu_active" className="nav-link" to="/service">
+                      <NavLink
+                        exact
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/service"
+                      >
                         Services
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink exact activeClassName="menu_active" className="nav-link" to="/about">
+                      <NavLink
+                        exact
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/about"
+                      >
                         About
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink exact activeClassName="menu_active" className="nav-link" to="/contact">
+                      <NavLink
+                        exact
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/contact"
+                      >
                         Contact
                       </NavLink>
                     </li>
