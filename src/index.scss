@@ -13,23 +13,25 @@ $brand_color: #61DBFB;
   
   .navbar-brand {
     font-size: 1.9rem !important;
-    color: #565387 !important;
+    color: #7be5fff8 !important;
+  }
+  .navbar-brand:hover {
+    color: #00ccff !important;
   }
 
-  .navbar a {
+  .hov {
     font-size: 1.3rem;
     text-transform: capitalize;
   }
   
   .menu_active {
     font-weight: bold;
-    border-bottom: 1px solid #565387;
+    border-bottom: 1px solid $brand_color;
   }
   
-  .navbar a:hover {
+  .hov:hover {
     color: $brand_color !important;
   }
-  
   @media (max-width: 991px) {
     .navbar-brand {
       font-size: 1.5rem !important;

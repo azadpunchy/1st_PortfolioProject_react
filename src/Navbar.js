@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+
+
 const Navbar = () => {
   // toggle hamburger start
   const [navbar, setnavbar] = useState({
@@ -44,7 +46,7 @@ const Navbar = () => {
                       <NavLink
                         exact
                         activeClassName="menu_active"
-                        className="nav-link active"
+                        className="nav-link active hov"
                         aria-current="page"
                         to="/"
                       >
@@ -55,7 +57,7 @@ const Navbar = () => {
                       <NavLink
                         exact
                         activeClassName="menu_active"
-                        className="nav-link"
+                        className="nav-link hov"
                         to="/service"
                       >
                         Services
@@ -65,7 +67,7 @@ const Navbar = () => {
                       <NavLink
                         exact
                         activeClassName="menu_active"
-                        className="nav-link"
+                        className="nav-link hov"
                         to="/about"
                       >
                         About
@@ -75,7 +77,7 @@ const Navbar = () => {
                       <NavLink
                         exact
                         activeClassName="menu_active"
-                        className="nav-link"
+                        className="nav-link hov"
                         to="/contact"
                       >
                         Contact
