@@ -7,6 +7,7 @@ import About from "./About";
 import Service from "./Services";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
+import Footer from "./footer";
 const App = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
         <Redirect to="/" />
       </Switch>
+      <Footer />
     </>
   );
 };
