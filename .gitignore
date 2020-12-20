@@ -5,7 +5,7 @@ debug.log
 .vscode
 .prettierrc
 /public
-README.md
+
 # dependencies
 /node_modules
 /.pnp
