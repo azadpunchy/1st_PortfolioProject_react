@@ -1,16 +1,11 @@
 import React from "react";
 import Common from "./Common";
-import web from "./logo.svg";
+import web from "./images/hero-img.png";
 
 const About = () => {
   return (
     <>
-      <Common
-        head1="I am About Page "
-        imgsrc={web}
-        visit="/contact"
-        btname="Contact Now"
-      />
+      <Common head1="" imgsrc={web} visit="/contact" btname="Contact Now" />
     </>
   );
 };

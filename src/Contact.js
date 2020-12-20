@@ -35,13 +35,13 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-6 col-10 mx-auto">
             <form onSubmit={formSubmit}>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label">
                   FullName
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlInput1"
                   name="fullname"
                   value={data.fullname}
@@ -49,13 +49,13 @@ const Contact = () => {
                   placeholder="Enter your name"
                 />
               </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label">
                   Phone
                 </label>
                 <input
                   type="number"
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlInput1"
                   name="phone"
                   value={data.phone}
@@ -63,13 +63,13 @@ const Contact = () => {
                   placeholder="mobile number"
                 />
               </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label">
                   Email address
                 </label>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlInput1"
                   name="email"
                   value={data.email}
@@ -78,12 +78,12 @@ const Contact = () => {
                 />
               </div>
 
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">
+              <div className="mb-3">
+                <label for="exampleFormControlTextarea1" className="form-label">
                   Message
                 </label>
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
                   name="msg"
@@ -92,8 +92,8 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <div class="col-12">
-                <button class="btn btn-outline-primary" type="submit">
+              <div className="col-12">
+                <button className="btn btn-outline-primary" type="submit">
                   Submit form
                 </button>
               </div>
