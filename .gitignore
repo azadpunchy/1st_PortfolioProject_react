@@ -4,7 +4,8 @@
 debug.log
 .vscode
 .prettierrc
-/public
+*package-lock.json
+
 
 # dependencies
 /node_modules
